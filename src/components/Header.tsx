@@ -1,4 +1,4 @@
-import { BookOpen, Sparkles } from 'lucide-react';
+﻿import { BookOpen, Sparkles } from 'lucide-react';
 import type { AppView } from '../types/book';
 
 interface HeaderProps {
@@ -17,7 +17,7 @@ export function Header({ activeView, onSelectView, totalBooks }: HeaderProps) {
           className="group flex items-center gap-3 text-left focus-visible:rounded-lg"
         >
           <img
-            src="/logo-lmp-bleu-petrole.svg"
+            src={`${import.meta.env.BASE_URL}logo-lmp-bleu-petrole.svg`}
             alt="Logo Les MotsPassants"
             className="h-11 w-auto shrink-0 transition-transform duration-200 group-hover:scale-[1.03]"
           />
